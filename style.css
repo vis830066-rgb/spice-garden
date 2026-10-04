@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+header {
+    background: #7b1e1e;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ffe0b2;
+}
+
+#home h1 {
+    font-size: 48px;
+    color: #7b1e1e;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #7b1e1e;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a52a2a;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+#menu h2,
+#about h2,
+#contact h2 {
+    color: #7b1e1e;
+    margin-bottom: 30px;
+}
+
+#menu > div {
+    display: inline-block;
+    background: white;
+    width: 250px;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#menu h3 {
+    margin-bottom: 10px;
+}
+
+#menu p {
+    color: #d35400;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#about {
+    background: white;
+}
+
+#about p,
+#contact p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background: #7b1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+    #menu > div {
+        width: 90%;
+    }
+}
+
+#menu > div img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#booking {
+    background: #fff3e0;
+}
+
+#bookingForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#bookingForm input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#bookingResult {
+    font-weight: bold;
+    color: #7b1e1e;
+}
